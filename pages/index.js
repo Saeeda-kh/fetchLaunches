@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.scss";
 import { ApolloClient, InMemoryCache, gql } from "@apollo/client";
 
 export default function Home({ launches }) {
@@ -12,7 +12,7 @@ export default function Home({ launches }) {
 
         </title>
       </Head>
-      <table className="table">
+      <table className={styles.table}>
         <tr >
         <th>
         Mission Name  
